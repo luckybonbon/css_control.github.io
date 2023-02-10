@@ -1,0 +1,339 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h1 {
+  color: #008080;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px 1px #757474;
+}
+header div.logo {
+  display: flex;
+  align-items: center;
+  flex: 5 1 500px;
+  margin-left: 1em;
+}
+header div.logo img {
+  height: 6vw;
+  width: 6vw;
+}
+header nav {
+  flex: 5 1 400px;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ul li a {
+  color: #008080;
+  text-decoration: none;
+  font-size: 1.35rem;
+}
+
+main section.backImage {
+  min-height: 90vh;
+  width: 100%;
+  background-image: url("../Pictures/climb.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+main section.backImage h3 {
+  font-size: 3.5rem;
+  color: white;
+  margin: 2rem 0;
+}
+main section.backImage button.start {
+  background-color: rgba(0, 255, 0, 0.3);
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+main section.backImage button.start:hover {
+  background-color: rgba(0, 200, 0, 0.5);
+}
+main section.backImage div.filter {
+  background-color: rgba(50, 50, 0, 0.2);
+  width: 100%;
+  min-height: 90vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+main section.backImage2 {
+  min-height: 50vh;
+  width: 100%;
+  background-image: url("../Pictures/climb.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+main section.backImage2 h3 {
+  font-size: 3.5rem;
+  color: white;
+  margin: 2rem 0;
+}
+main section.backImage2 button.start {
+  background-color: rgba(0, 255, 0, 0.3);
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+main section.backImage2 button.start:hover {
+  background-color: rgba(0, 200, 0, 0.5);
+}
+main section.backImage2 div.filter {
+  background-color: rgba(50, 50, 0, 0.2);
+  width: 100%;
+  min-height: 50vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+section.first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 40vh;
+}
+section.first h1 {
+  margin: 1rem;
+  font-weight: 600;
+}
+section.first section.cards {
+  display: flex;
+  width: 80%;
+  min-height: 60vh;
+  flex-wrap: wrap;
+}
+section.first section.cards div.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  flex: 1 1 100px;
+}
+section.first section.cards div.image-container {
+  width: 20vw;
+  height: 15vw;
+  border-radius: 5px;
+  margin: 1rem;
+}
+section.first section.cards div.image-container img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+section.first section.cards div.image-container img:hover {
+  transform: scale(1.3);
+}
+section.first section.cards h4 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+section.first section.cards p {
+  font-size: 1.25rem;
+}
+section.first section.cards a {
+  margin: 1rem 0;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  background-color: #09777d;
+  color: white;
+  font-size: 1.25rem;
+}
+
+section.second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+section.second h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+section.second section.cards {
+  display: flex;
+  width: 80%;
+  min-height: 80vh;
+  flex-wrap: wrap;
+}
+section.second section.cards div.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  flex: 1 1 300px;
+}
+section.second section.cards div.image-container {
+  width: 15vw;
+  height: 15vw;
+  border: 3px solid rgba(200, 200, 200, 0.2);
+  border-radius: 50%;
+  overflow: hidden;
+}
+section.second section.cards div.image-container img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+section.second section.cards div.image-container img:hover {
+  transform: scale(1.4);
+}
+section.second section.cards h4 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+section.second section.cards p {
+  font-size: 1.25rem;
+}
+section.second section.cards a {
+  margin: 1rem 0;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  background-color: #09777d;
+  color: white;
+  font-size: 1.25rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 30vh;
+  justify-content: space-around;
+  background-color: rgba(207, 207, 207, 0.5);
+}
+footer div.logo {
+  display: flex;
+  align-items: center;
+}
+footer div.logo img {
+  width: 6vw;
+  height: 6vw;
+}
+footer nav {
+  width: 30%;
+}
+footer nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer nav ul li {
+  width: 5vw;
+  flex-basis: 100px;
+}
+footer nav ul li a {
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.35rem;
+  margin: 1em;
+}
+footer section.links a {
+  margin: 0 1rem;
+}
+footer section.links a img {
+  width: 5vw;
+  height: 5vw;
+}
+
+@media screen and (max-width: 550px) {
+  header div.logo {
+    margin-left: 0.5rem;
+  }
+  header div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+  footer div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+  footer section.links {
+    margin-top: 1rem;
+  }
+  footer section.links a img {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  section.second section.cards div.card div.image-container {
+    width: 40vw;
+    height: 40vw;
+  }
+  section.second section.cards div.card div.image-container img {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+/* width 捲軸寬度*/
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track 卷軸背景*/
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle 卷軸顏色*/
+::-webkit-scrollbar-thumb {
+  background: #126a7a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #029e9e;
+}/*# sourceMappingURL=style2.css.map */
